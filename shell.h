@@ -2,6 +2,7 @@
 #define _SHELL_H
 
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
@@ -17,7 +18,7 @@
 #define WRITE_BUF_SIZE 1024
 #define BUF_FLUSH -1
 
-/* for command chaining */
+/* for command chaining*/
 #define CMD_NORM        0
 #define CMD_OR                1
 #define CMD_AND                2
@@ -35,7 +36,7 @@
 #define HIST_MAX        4096
 
 extern char **environ;
-
+int _putchar(char c);	
 
 /**
  * struct liststr - singly linked list
